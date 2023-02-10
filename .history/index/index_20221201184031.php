@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>胡哥的个人博客</title>
+    <title>优乐堂社区的个人博客</title>
     <link rel="stylesheet" href="./layui/css/layui.css">
     <link rel="stylesheet" href="./css/picture.css">
     <script src="./layui/layui.js"></script>
@@ -79,7 +79,7 @@
 			   ?>
     <!-- 导航栏 -->
     <?php 
-           include '../public/header.html';
+           include '../public/header.php';
        ?>
     <!-- 主图-->
     <div class="layui-fluid" style="padding-top:8px;">

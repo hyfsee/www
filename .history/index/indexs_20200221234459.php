@@ -29,7 +29,7 @@
 	</head>
 	<body style="background-color:#f3f3f3;" >
 	<?php 
-	include '../public/header.html';
+	include '../public/header.php';
 	?>
  <div class="layui-fluid" style="padding-top: 10px;">  
   <div class="layui-row">
