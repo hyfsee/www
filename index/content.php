@@ -45,9 +45,11 @@
 
 </head>
 
-<body style="background-color:#f3f3f3;" onmousemove=/HideMenu()/ oncontextmenu="return false" ondragstart="return false"
+<!-- <body style="background-color:#f3f3f3;" onmousemove=/HideMenu()/ oncontextmenu="return false" ondragstart="return false"
     onselectstart="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()"
-    onbeforecopy="return false" onmouseup="document.selection.empty()" onload="startTime()">
+    onbeforecopy="return false" onmouseup="document.selection.empty()" onload="startTime()"> -->
+
+<body style="background-color:#f3f3f3;" onload="startTime()">
     <!-- 导航栏 -->
     <?php 
           include '../public/header.php';
@@ -118,9 +120,9 @@
 		        $title = $sql_arr['title'];
 		 			
 							echo '<center>		
-						 <h3><br>'.$title.'</h3><center><br><hr><span style="padding: 0 15px"><i class="layui-icon layui-icon-face-smile" ></i>&nbsp;&nbsp;'.$auther.'</span>
+						 <h3><br>'.$title.'</h3></center><br><hr ><div style="text-align: center;"><span style="padding: 0 15px"><i class="layui-icon layui-icon-face-smile" ></i>&nbsp;&nbsp;'.$auther.'</span>
 						 <span style="padding: 0 15px"><i class="layui-icon">&#xe705;</i>【'.$type.'】</span>
-						 <span style="padding: 0 15px"><i class="layui-icon">&#xe637;</i>&nbsp;&nbsp;'.$date.'</span><hr><br><br>'.
+						 <span style="padding: 0 15px"><i class="layui-icon">&#xe637;</i>&nbsp;&nbsp;'.$date.'</span><hr></div><br><br>'.
 						$content.'<hr>';
 		           mysqli_close($conn);
 		           ?>
