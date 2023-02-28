@@ -52,15 +52,6 @@
         letter-spacing: 0px;
         text-indent: 10px;
     }
-
-    p>img {
-        width: 100%
-    }
-
-    video {
-
-        width: 100%
-    }
     </style>
 
 </head>

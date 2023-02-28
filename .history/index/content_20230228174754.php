@@ -53,12 +53,7 @@
         text-indent: 10px;
     }
 
-    p>img {
-        width: 100%
-    }
-
-    video {
-
+    img {
         width: 100%
     }
     </style>

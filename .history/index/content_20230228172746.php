@@ -41,26 +41,6 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
-
-    pre {
-        background: #000;
-        color: #FFF;
-        font-family: sans-serif;
-        font-size: 12px;
-        line-height: 200%;
-        word-spacing: 5px;
-        letter-spacing: 0px;
-        text-indent: 10px;
-    }
-
-    p>img {
-        width: 100%
-    }
-
-    video {
-
-        width: 100%
-    }
     </style>
 
 </head>

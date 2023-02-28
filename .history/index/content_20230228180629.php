@@ -53,7 +53,7 @@
         text-indent: 10px;
     }
 
-    p>img {
+    img {
         width: 100%
     }
 
