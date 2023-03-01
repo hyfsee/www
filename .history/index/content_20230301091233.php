@@ -93,7 +93,7 @@
                         </span>
                     </div>
                     <div class="layui-card-body">
-                        <div class="box1">
+                        <div class="box">
 
                             <?php
 			       include('../config.php');
@@ -179,7 +179,7 @@
     function startTime() {
 
         $("#aduio").attr("src", "./audio/" + Math.round(Math.random() * 2 + 1) + ".mp3")
-        $("#aduio").volume = 0.2
+        $("#aduio").volume = "0.2"
     }
     </script>
     <div class="layui1">

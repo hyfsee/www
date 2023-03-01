@@ -204,7 +204,7 @@
 					    while($v = $data->fetch_assoc()){
 							echo'<div class="story body">
 							   <table class="layui-table" lay-even lay-skin="nob">
-								 <tbody><tr><td><img src="./upload/'. $v['picture'].'"style="width:400px;height:150px" class="tpicture"></td>
+								 <tbody><tr><td><img src="./upload/'. $v['picture'].'"style="width:400px;height:150px;object-fit: cover"  class="tpicture"></td>
 								        <td><span style="padding-top:-30px;"><a href="content.php?id='.$v['Id'].'">
 										<b>'.$v['title'].'</b></a></span></br></br>
 								  			<span style="display: block; height: 100px; text-overflow: ellipsis; overflow: hidden; white-space: normal;">'.$v['product'].'<a style="margin-top: 15px; position: absolute;right: 10px;" href="content.php?id='.$v['Id'].'" class="layui-btn layui-btn-xs"  target="_blank" style="text-align: right;">查看详情 </a></span><br><br><br>

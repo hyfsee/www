@@ -93,7 +93,7 @@
                         </span>
                     </div>
                     <div class="layui-card-body">
-                        <div class="box1">
+                        <div class="box">
 
                             <?php
 			       include('../config.php');

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>优乐堂社区的个人博客</title>
+    <title>优乐堂社区</title>
     <link rel="stylesheet" href="./layui/css/layui.css">
     <link rel="stylesheet" href="./css/picture.css">
     <script src="./layui/layui.js"></script>
@@ -199,11 +199,12 @@
         $data = $conn->query($sql);	
         $p = ($page == 1) ? 0 : ($page - 1);
         $n = ($page == $w) ? 0 : ($page + 1);
+        $tt=$data->num_rows;
 					if ($data->num_rows > 0) {  
 					    while($v = $data->fetch_assoc()){
 							echo'<div class="story body">
 							   <table class="layui-table" lay-even lay-skin="nob">
-								 <tbody><tr><td><img src="./upload/'. $v['picture'].'"style="width:400px;height:150px" class="tpicture"></td>
+								 <tbody><tr><td><img src="./upload/'. $v['picture'].'"style="width:400px;height:150px;object-fit: cover"  class="tpicture"></td>
 								        <td><span style="padding-top:-30px;"><a href="content.php?id='.$v['Id'].'">
 										<b>'.$v['title'].'</b></a></span></br></br>
 								  			<span style="display: block; height: 100px; text-overflow: ellipsis; overflow: hidden; white-space: normal;">'.$v['product'].'<a style="margin-top: 15px; position: absolute;right: 10px;" href="content.php?id='.$v['Id'].'" class="layui-btn layui-btn-xs"  target="_blank" style="text-align: right;">查看详情 </a></span><br><br><br>
@@ -220,28 +221,26 @@
 										'.$v['date'].'</span></div></td></tr>
 								    </tbody>
 								  </table>
-								  </div>
-              
-					</div>	
-				
-					<div class="center" align="center">
-					<ul class="pagination" >
-					';
+								  </div>';
 					 }};
-					
-                if ($page==1){echo '<li class="fenye"><a href="">首页</a></li>';}
-				else{echo '<li class="fenye"><a href="?page=1">首页</a></li>';}
+                     if($tt>0){
+                if ($page==1){echo '<div class="center" align="center"><ul class="pagination" ><li class="fenye"><a href="">首页</a></li>';}
+				else{echo '<div class="center" align="center"><ul class="pagination" ><li class="fenye"><a href="?page=1">首页</a></li>';}
                 if ($p){echo '<li><a href="?page='.$p.'">上一页</a></li>';}else{echo '<li><a href="">上一页</a></li>';}
                if ($n){echo '<li><a href="?page='.$n.'">下一页</a></li>';}else{echo '<li><a href="">下一页</a></li>';}
-               if($page== $w){echo '<li><a href="">尾页</a></li>';}else{echo '<li><a href="?page='.$w.'">尾页</a></li>';}
-			    $conn->close();
+               if($page== $w){echo '<li><a href="">尾页</a></li> </ul></div>';}else{echo '<li><a href="?page='.$w.'">尾页</a></li> </ul></div>';}
+            }else{
+                echo '<center><div style="padding:40px;font-size:20px;color:ff0000">这里暂时还没有哦！后续的我们会更新的哦！</div><center>';
+            }
+               
+               $conn->close();
 				
 			   ?>
-                    </ul>
                 </div>
-
-
             </div>
+
+
+
             <div class="layui-col-md2" style="margin-left:7px">
                 <?php 
 	       include '../public/chickensoup.php';

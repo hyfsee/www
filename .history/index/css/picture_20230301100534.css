@@ -132,4 +132,13 @@
 		
 		
 	}
-	 
+	.layui-table img {
+		padding: 20px;
+		max-width: 400px;
+	}
+	 .layui-table td{
+		width: 50%;
+	}
+	.tpicture{
+		object-fit: cover;
+	}

@@ -139,3 +139,6 @@
 	 .layui-table td{
 		width: 50%;
 	}
+	.tpicture{
+		object-fit: cover;
+	}

@@ -76,7 +76,7 @@
       ?>
 
     <!-- 添加一个背景音乐 -->
-    <audio autoplay="autoplay" id="aduio">
+    <audio autoplay="autoplay" id="aduio" volume="0.1">
         <source src="" />
     </audio>
     </ul>
@@ -93,7 +93,7 @@
                         </span>
                     </div>
                     <div class="layui-card-body">
-                        <div class="box1">
+                        <div class="box">
 
                             <?php
 			       include('../config.php');
@@ -179,7 +179,6 @@
     function startTime() {
 
         $("#aduio").attr("src", "./audio/" + Math.round(Math.random() * 2 + 1) + ".mp3")
-        $("#aduio").volume = 0.2
     }
     </script>
     <div class="layui1">
