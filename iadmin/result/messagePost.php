@@ -5,7 +5,7 @@
 	 $email=$_POST['email'];
 	 $wspeak=$_POST['wspeak'];
 	 $chickensoup=$_POST['chickensoup'];
-	include('../config.php');
+	include('../../config.php');
 	  if (mysqli_connect_errno())
 	  {
 	      echo "连接失败: " . mysqli_connect_error();

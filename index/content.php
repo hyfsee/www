@@ -43,7 +43,7 @@
     }
 
     pre {
-        background: #000;
+        background: #393D49;
         color: #FFF;
         font-family: sans-serif;
         font-size: 12px;
@@ -51,6 +51,11 @@
         word-spacing: 5px;
         letter-spacing: 0px;
         text-indent: 10px;
+        padding: 10px 8px;
+    }
+
+    p {
+        line-height: 24px;
     }
 
     p>img {

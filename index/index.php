@@ -42,39 +42,17 @@
     include('../config.php');
 	$date1= date("Y-m-d H:i:s", time());
 	$ip= $_SERVER["REMOTE_ADDR"];
-    $sql = "SELECT * FROM log";
-    $data = $conn->query($sql);
-	$result=$data->num_rows;
-    
-     if($result<=0){
+   
 
-		$sql1 = "INSERT INTO log ( ip, date1)
-		VALUES ('$ip', '$date')";
+		$sql1 = "INSERT INTO log ( ip, date,content)
+		VALUES ('$ip', '$date1','访问主页')";
    if ($conn->query($sql1) === TRUE) {
   
    } else {
     echo "Error: " . $sql1 . "<br>" . $conn->error;
     }
   
-
-	 }else{
-  
-		include('../config.php');
-	
-	     $upSql="UPDATE log SET ip='$ip' ,date='$date1' WHERE id=1";
-
-		 if($conn->query($upSql) === TRUE) {
-		
-		   } else {
-			echo "Error: " . $upSql . "<br>" . $conn->error;
-			}
-
-
-
-	 }
-
-      
-			    $conn->close();
+	$conn->close();
 				
 			   ?>
     <!-- 导航栏 -->

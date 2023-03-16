@@ -50,7 +50,7 @@
 				   include('../config.php');
 				   $date= date("Y-m-d");
 				   $ip= $_SERVER["REMOTE_ADDR"];
-				   $sql = "select * from log";
+				   $sql = "select * from log order by date DESC limit 1";
 				   $result= mysqli_query($conn,$sql);
 				 
 				   $datarow = mysqli_num_rows($result); //长度

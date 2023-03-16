@@ -58,12 +58,12 @@
                        $contents=$sql_arr['contens'];
 				      
 
-                        echo '<tr class="text-c" ><td style="color:green">'.($i+1).'</td>
-                        <td style="color:green">'.$title.'</td>
-                        <td style="color:green">'.$date.'</td>
-                        <td style="color:green">'.$contents.'</td>
+                        echo '<tr class="text-c" ><td style="color:green;width:80px">'.($i+1).'</td>
+                        <td style="color:green;width:120px">'.$title.'</td>
+                        <td style="color:green;width:120px">'.$date.'</td>
+                        <td style="color:green;width:1200px;text-overflow: ellipsis !important;">'.$contents.'</td>
                       
-                        <td ><a  style="color:red" href="./result/deleteTimeline.php?id='.$id.'">删除</a></td></tr>';
+                        <td ><a  style="color:red;width:120px" href="./result/deleteTimeline.php?id='.$id.'">删除</a></td></tr>';
 
 					   }
 						 $conn->close();?>

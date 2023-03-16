@@ -106,6 +106,7 @@ $_POST['password']!=""
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `ip` varchar(255) NOT NULL,
     `date` dateTime NOT NULL,
+    `content` text,
     PRIMARY KEY (`id`)
   ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1"; 
 
